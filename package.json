@@ -1,0 +1,21 @@
+{
+  "name": "protractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "node ./node_modules/protractor/bin/webdriver-manager update",
+    "android": "protractor android_conf.js",
+    "spec": "protractor protractor.specs_conf.js"
+  },
+  "author": "Andrey Melnichenko",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^4.0.0",
+    "cucumber-html-reporter": "^4.0.2",
+    "protractor": "^5.4.1",
+    "protractor-beautiful-reporter": "^1.2.5",
+    "protractor-helper": "^3.6.14"
+  }
+}
