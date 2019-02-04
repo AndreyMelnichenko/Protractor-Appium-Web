@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "node ./node_modules/protractor/bin/webdriver-manager update",
-    "android": "protractor android_conf.js",
-    "spec": "protractor protractor.specs_conf.js"
+    "web": "protractor web_conf.js",
+	"android": "protractor app_conf.js"
   },
   "author": "Andrey Melnichenko",
   "devDependencies": {
@@ -16,6 +16,9 @@
     "cucumber-html-reporter": "^4.0.2",
     "protractor": "^5.4.1",
     "protractor-beautiful-reporter": "^1.2.5",
-    "protractor-helper": "^3.6.14"
+    "protractor-helper": "^3.6.14",
+    "underscore": "^1.9.1",
+    "wd": "^1.11.1",
+    "wd-bridge": "0.0.2"
   }
 }
