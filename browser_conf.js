@@ -10,6 +10,8 @@ exports.config  = {
 	    browserName: 'chrome',
     },
 
+	SELENIUM_PROMISE_MANAGER: true,
+
     jasmineNodeOpts: {
         showColors: true,
         defaultTimeoutInterval: 30000

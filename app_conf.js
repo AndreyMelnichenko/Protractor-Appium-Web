@@ -6,13 +6,13 @@ config.config.specs = ['app_spec.js'];
 config.config.capabilities = _.extend(config.config.capabilities, {
 		//directConnect: false,
 		app: 'C:\\wdBridge\\Protractor-Appium-Web\\test-app.apk',
-		// newCommandTimeout: 140,
-		// autoWebviewTimeout: 10000,
-		autoWebView: true,
-		fulReset: true,
+		autoWebviewTimeout: 20000,
+		newCommandTimeout: 300000,
+		autoWebview: true,
+		//fulReset: true,
 	 	'appium-version': '1.9',
-		deviceReadyTimeout: 10,
-		browserName: '',
+		//deviceReadyTimeout: 10,
+		browserName: ''
 });
 config.config = _.extend(config.config, {
 	onPrepare: function () {
