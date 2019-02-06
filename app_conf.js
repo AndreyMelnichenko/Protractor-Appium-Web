@@ -10,6 +10,7 @@ config.config.capabilities = _.extend(config.config.capabilities, {
 	// appActivity: "com.bpmonline.mobile.MainActivity",
 		newCommandTimeout: 140,
 		autoWebviewTimeout: 10000,
+		autoWebView: true,
 		fulReset: true,
 		'appium-version': '1.9',
 		deviceReadyTimeout: 10,
@@ -22,6 +23,8 @@ config.config = _.extend(config.config, {
 			wdBridge = require('wd-bridge')(protractor, wd);
 		wdBridge.initFromProtractor(exports.config);
 	}
+	// var extendedWebdriver = require('webdriver-js-extender').extend(webdriver);
+	// extendedWebdriver.setNetworkConnection(5);
 })
 
 exports.config = config.config;
