@@ -4,13 +4,13 @@ var _ = require('underscore');
 
 config.config.specs = ['app_spec.js'];
 config.config.capabilities = _.extend(config.config.capabilities, {
-		directConnect: true,
+		//directConnect: false,
 		app: 'C:\\wdBridge\\Protractor-Appium-Web\\test-app.apk',
-		newCommandTimeout: 140,
-		autoWebviewTimeout: 10000,
+		// newCommandTimeout: 140,
+		// autoWebviewTimeout: 10000,
 		autoWebView: true,
 		fulReset: true,
-		'appium-version': '1.9',
+	 	'appium-version': '1.9',
 		deviceReadyTimeout: 10,
 		browserName: '',
 });

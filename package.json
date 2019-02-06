@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "node ./node_modules/protractor/bin/webdriver-manager update",
-    "web": "protractor web_conf.js",
-	"android": "protractor app_conf.js"
+    "web": "protractor browser_conf.js",
+    "android": "protractor app_conf.js"
   },
   "author": "Andrey Melnichenko",
   "devDependencies": {
