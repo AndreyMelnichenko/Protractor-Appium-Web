@@ -9,7 +9,6 @@ describe('angularjs homepage todo list', function() {
         expect(todoList.count()).toEqual(3);
         expect(todoList.get(2).getText()).toEqual('write first protractor test');
 
-        // You wrote your first test, cross it off the list
         todoList.get(2).element(by.css('input')).click();
         var completedAmount = element.all(by.css('.done-true'));
         expect(completedAmount.count()).toEqual(2);
@@ -36,13 +35,12 @@ describe('Protractor Demo App', function() {
         expect(browser.getTitle()).toEqual('Super Calculator');
     });
     it('should add one and two', function() {
-        //browser.get('http://juliemr.github.io/protractor-demo/');
+        browser.get('http://juliemr.github.io/protractor-demo/');
         firstNumber.sendKeys(1);
         secondNumber.sendKeys(2);
         goButton.click();
         expect(latestResult.getText()).toEqual('3');
     });
-    //--------------------------------------------------------
     it('should add one and two', function() {
         firstNumber.sendKeys(1);
         secondNumber.sendKeys(2);
@@ -73,6 +71,6 @@ describe('Protractor Demo App', function() {
         add(3, 4);
 
         expect(history.last().getText()).toContain('1 + 2');
-        expect(history.first().getText()).toContain('3 + 4'); // This is wrong!
+        expect(history.first().getText()).toContain('3 + 4');
     });
 });

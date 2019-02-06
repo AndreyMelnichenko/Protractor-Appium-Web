@@ -6,8 +6,6 @@ config.config.specs = ['app_spec.js'];
 config.config.capabilities = _.extend(config.config.capabilities, {
 		directConnect: true,
 		app: 'C:\\wdBridge\\Protractor-Appium-Web\\test-app.apk',
-	// appPackage: "com.bpmonline.mobile70",
-	// appActivity: "com.bpmonline.mobile.MainActivity",
 		newCommandTimeout: 140,
 		autoWebviewTimeout: 10000,
 		autoWebView: true,

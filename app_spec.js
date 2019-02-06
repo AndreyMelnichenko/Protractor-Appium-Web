@@ -6,4 +6,3 @@ describe('angularjs homepage', function () {
 		console.log("Hello PROTRACTOR+Appium+WebView");
 	})
 });
-
