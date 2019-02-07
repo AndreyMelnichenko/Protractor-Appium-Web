@@ -1,21 +1,19 @@
-var isWin = process.platform;
-var currentPath = process.cwd();
-console.log(isWin+" "+currentPath);
-console.log(__dirname);
-const fs = require('fs');
+'use strict';
 
-function randomInt(low, high) {
-	return Math.floor(Math.random() * (high - low) + low)
+let currentPath = process.cwd();
+const appName = 'test-app.apk';
+
+function sysSeparator (){
+    if (process.platform === "win32"){
+        return "\\";
+    }else {
+        return "/";
+    }
 }
 
-var files = fs.readdirSync(currentPath);
-/*
-	.forEach(file => {
-		console.log(file);
-	})
-*/
-appName = 'test-app.apk';
-//sizeMyFile = fs.statSync(currentPath+"\\"+appName).size;
-console.log(fs.statSync(currentPath+"\\"+appName).size);
-console.log(typeof (currentPath+"\\"+appName));
+function appPath(){
+    return currentPath + sysSeparator() + appName;
+}
+
+module.exports.appPath = appPath;
 
