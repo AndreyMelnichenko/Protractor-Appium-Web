@@ -1,11 +1,13 @@
 'use strict'
 var config = require('./browser_conf.js');
 var _ = require('underscore');
+const appName = 'test-app.apk';
+var currentPath = process.cwd();
 
 config.config.specs = ['app_spec.js'];
 config.config.capabilities = _.extend(config.config.capabilities, {
 		//directConnect: false,
-		app: 'C:\\wdBridge\\Protractor-Appium-Web\\test-app.apk',
+		app: currentPath + "\\" + appName,
 		autoWebviewTimeout: 20000,
 		newCommandTimeout: 300000,
 		autoWebview: true,
