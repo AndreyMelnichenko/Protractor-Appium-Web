@@ -14,7 +14,9 @@ config.config.capabilities = _.extend(config.config.capabilities, {
 		//fulReset: true,
 	 	'appium-version': '1.9',
 		//deviceReadyTimeout: 10,
-		browserName: ''
+		browserName: '',
+		appPackage: 'io.selendroid.testapp',
+		appActivity: '.HomeScreenActivity'
 });
 config.config = _.extend(config.config, {
 	onPrepare: function () {
